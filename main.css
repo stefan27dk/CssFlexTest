@@ -64,40 +64,44 @@
 
 .bottom-bar
 {
-    background-color: chartreuse;
+    /* margin-top: auto; */
     width: 100%;
-    /* margin-top:auto; */
-    flex: 1;
-    flex-direction:row-;
+    background-color: chartreuse;
 }
 
 
 
 .left-bar
 {
-      /* display:table-column; */
-      background-color: darkgreen;
+      background-color: rgb(3, 133, 3);
       width: max-content;
-      max-height:fit-content;
-      overflow-y: auto;
+      height:100%;
+      min-height: 10px;
+      overflow-y: scroll;
       overflow-x: hidden;
       box-sizing: border-box;
 }
 
 
 .right-bar
-{
+{ 
    background-color: darkmagenta;
-   width: max-content;
-   height: 100%;
+   width: max-content; 
    margin-left: auto;
+   height:100%;
+      min-height: 10px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      box-sizing: border-box;
 }
 
 
 .middle
 {
     width: 100%;
-    height: 100%;
+    height:100%;
+    min-height: 10px;
+    box-sizing: border-box;
     display: inline-flex; 
 }
 
@@ -106,4 +110,14 @@
     /* flex-direction:column; */
     flex-grow: 1;
     height: auto;
+}
+
+
+
+
+.content
+{
+    background-color: deepskyblue;
+    width: 100%;
+    overflow: auto;
 }
