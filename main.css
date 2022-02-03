@@ -1,0 +1,109 @@
+
+
+/*PAGE - ALL*/
+*{
+    margin:0;
+    padding: 0;
+ }
+ 
+ 
+ /* HTML =====================================================================================*/
+ html
+ {
+     min-width: 100vw;
+     max-width: 100vw;
+     min-height: 100vh;
+     max-height: 100vh;
+     padding: 0;
+     margin: 0;
+     top:0;
+     bottom: 0;
+     left:0;
+     right:0;
+     background-color: sandybrown;
+     box-sizing: border-box;
+ }
+ 
+  
+  /* MAIN BODY ================================================================================ */
+ .main-body
+ {
+     min-width: 100vw;
+     max-width: 100vw;
+     min-height: 100vh;
+     max-height: 100vh;
+     top:0;
+     bottom: 0;
+     left:0;
+     right:0;
+     padding: 0;
+     margin: 0;
+     background-color: blue;
+     box-sizing: border-box;
+     overflow: hidden;
+ }
+ 
+ 
+
+.holder
+{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction:column;
+    height: 100vh;
+
+}
+
+
+.top-bar
+{
+  width: 100%;
+  background-color: burlywood;
+}
+
+
+.bottom-bar
+{
+    background-color: chartreuse;
+    width: 100%;
+    /* margin-top:auto; */
+    flex: 1;
+    flex-direction:row-;
+}
+
+
+
+.left-bar
+{
+      /* display:table-column; */
+      background-color: darkgreen;
+      width: max-content;
+      max-height:fit-content;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-sizing: border-box;
+}
+
+
+.right-bar
+{
+   background-color: darkmagenta;
+   width: max-content;
+   height: 100%;
+   margin-left: auto;
+}
+
+
+.middle
+{
+    width: 100%;
+    height: 100%;
+    display: inline-flex; 
+}
+
+.item
+{
+    /* flex-direction:column; */
+    flex-grow: 1;
+    height: auto;
+}
