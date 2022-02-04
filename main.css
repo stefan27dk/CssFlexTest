@@ -21,7 +21,7 @@
     left:0;
     right:0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden; 
  }
 
 
@@ -193,3 +193,24 @@
     max-height: 30px;
 }
  
+
+
+
+/*TOGGLE - Vertical - Bars======================================================================================*/
+.button-toggle-vertical-bar
+{ 
+  position: relative;
+  width: 10px;
+  height: 100%;
+  cursor:pointer;
+  /* border: none; */
+  /* top: 50%; */
+ top: 50%;
+ transform:translateY(-50%);
+ cursor: col-resize;
+}
+
+.translate-y-minus-70px
+{
+    transform:translateY(-55px);
+}
