@@ -3,8 +3,10 @@
 /* *{
     margin:0;
     padding: 0;
- }
-  */
+    box-sizing: border-box;
+
+ } */
+ 
 
  html, .main-body
  {
@@ -19,6 +21,7 @@
     left:0;
     right:0;
     box-sizing: border-box;
+    overflow: hidden;
  }
 
 
@@ -42,18 +45,19 @@
 .bars-holder
 {
     display: flex;
+    height: 100vh;
     background-color: aquamarine;
     flex-direction:column;
-    height: 100vh;
+    box-sizing: border-box;
 }
 
 
 
 #top-bar, #bottom-bar
 {
+    max-height: 70px;
+    min-height: 70px;
     width: 100%;
-    min-height: 70px; 
-    padding-bottom: 10px;
     white-space : nowrap;
     box-sizing: border-box;
     overflow-x: auto;
@@ -79,26 +83,25 @@
 
 .middle-bars-holder
 {
+    display: inline-flex;
     width: 100%;
-    min-height: 10px;
+    min-height: 50px;
     height:100%;
     box-sizing: border-box;
-    display: inline-flex;
 }
 
 
 
-.left-bar, .right-bar
+#left-bar, #right-bar
 {
     min-width: min-content;
-    width: max-content;
     max-width: 150px;
-    min-height: 10px;
     height:100%;
+    padding:12px;
 
-    padding: 12px;
     text-align: center;
     word-wrap: break-word;
+    word-break: break-word;
     box-sizing: border-box;
 
     overflow-y: auto;
@@ -107,7 +110,7 @@
 
 
  /*LEFT-BAR ===================================================================================*/
-.left-bar
+#left-bar
 {
       background-color: rgb(3, 133, 3);
 }
@@ -116,7 +119,7 @@
 
 
  /*RIGHT-BAR ===================================================================================*/
- .right-bar
+ #right-bar
  {
        background-color: darkmagenta;
        margin-left: auto;
@@ -129,11 +132,11 @@
 .content-bar
 {
     background-color: deepskyblue;
-    width: 100%;
-    padding:12px;
     box-sizing: border-box;
-    word-wrap: break-word;
-    overflow: auto;
+    width: 100%;
+    height:100%;
+    word-wrap: break-word; 
+    overflow: auto; 
 }
 
  
@@ -142,8 +145,11 @@
 /*Centerize Container ==========================================================================*/
 .centerize-container
 {
-    margin: 0px auto 0px auto;
+    background-color: blue;
+    margin: auto;
     width:fit-content;
+    height: min-content;
+    box-sizing: border-box;
 }
 
 
