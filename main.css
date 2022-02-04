@@ -47,32 +47,62 @@
     height: 100vh;
 }
 
- /*TOP-BAR ===================================================================================*/
-.top-bar
+
+
+#top-bar, #bottom-bar
 {
-  width: 100%;
-  background-color: burlywood;
+    width: 100%;
+    min-height: 70px; 
+    padding-bottom: 10px;
+    white-space : nowrap;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y:hidden;
 }
+
+
+ /*TOP-BAR ===================================================================================*/
+#top-bar
+{
+    background-color: burlywood;
+}
+
+
+ /*BOTTOM-BAR ===================================================================================*/
+ #bottom-bar
+ {
+     background-color: chartreuse;
+ }
+
 
 
 
 .middle-bars-holder
 {
     width: 100%;
-    height:100%;
     min-height: 10px;
+    height:100%;
     box-sizing: border-box;
     display: inline-flex;
 }
 
 
 
- /*BOTTOM-BAR ===================================================================================*/
-.bottom-bar
+.left-bar, .right-bar
 {
-    /* margin-top: auto; */
-    width: 100%;
-    background-color: chartreuse;
+    min-width: min-content;
+    width: max-content;
+    max-width: 150px;
+    min-height: 10px;
+    height:100%;
+
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
@@ -80,13 +110,19 @@
 .left-bar
 {
       background-color: rgb(3, 133, 3);
-      width: max-content;
-      height:100%;
-      min-height: 10px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      box-sizing: border-box;
 }
+
+
+
+
+ /*RIGHT-BAR ===================================================================================*/
+ .right-bar
+ {
+       background-color: darkmagenta;
+       margin-left: auto;
+ }
+
+ 
 
 
  /*CONTENT-BAR ===================================================================================*/
@@ -94,33 +130,60 @@
 {
     background-color: deepskyblue;
     width: 100%;
+    padding:12px;
+    box-sizing: border-box;
+    word-wrap: break-word;
     overflow: auto;
 }
 
+ 
+  
 
- /*RIGHT-BAR ===================================================================================*/
-.right-bar
+/*Centerize Container ==========================================================================*/
+.centerize-container
 {
-      background-color: darkmagenta;
-      width: max-content;
-      margin-left: auto;
-      height:100%;
-      min-height: 10px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      box-sizing: border-box;
+    margin: 0px auto 0px auto;
+    width:fit-content;
 }
 
 
 
 
-.item
+
+/*HORIZONTAL BARS - CONTENT - ############################################################################*/
+.horizontal-bar-content
 {
-    /* flex-direction:column; */
-    flex-grow: 1;
-    height: auto;
+    background-color: red;
+    display: inline-table; 
+    text-align: center;
+    white-space: nowrap;
+    margin: 2px 10px 2px 10px;
+}
+
+ 
+
+.horizontal-bar-content img 
+{
+    max-height: 30px;
 }
 
 
 
 
+/*VERTICAL BARS - CONTENT - ############################################################################*/
+.vertical-bar-content
+{
+    background-color: rgb(255, 255, 199);
+    width:fit-content;
+    display: block;
+    margin: 35px auto 35px auto;
+    text-align: center;
+    /* white-space : nowrap; */
+}
+
+
+.vertical-bar-content img 
+{
+    max-height: 30px;
+}
+ 
