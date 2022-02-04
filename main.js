@@ -9,14 +9,14 @@ toggleVerticalBar = (e) =>
     if(currentBar.style.display === 'none')
     {
         currentBar.style.display = 'block';
-        current.style.transform += "rotate(360deg)";
-        current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
+        // current.style.transform += "rotate(360deg)";
+        // current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
     }
     else    
     {
         currentBar.style.display = 'none';
-        current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
-        current.style.transform += "rotate(-180deg)";
+        // current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
+        // current.style.transform += "rotate(-180deg)";
     }
 }
 
@@ -44,7 +44,7 @@ document.getElementById('toggleLeftBarButton').addEventListener("click", toggleV
 document.getElementById('toggleRightBarButton').addEventListener("click", toggleVerticalBar);
 
 // //BOTTOMBAR-TOGGLE-BTN
-// document.getElementById('toggleBottomBarButton').addEventListener("click", toggleVerticalBar);
+document.getElementById('toggleBottomBarButton').addEventListener("click", toggleVerticalBar);
 
 // TOPBAR
 document.getElementById('top-bar').addEventListener("wheel", scrollHorizontal);
