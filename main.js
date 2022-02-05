@@ -40,11 +40,15 @@ scrollHorizontal = (e) =>
 // LEFTBAR-TOGGLE-BTN
 document.getElementById('toggleLeftBarButton').addEventListener("click", toggleVerticalBar);
 
-// //RIGHTBAR-TOGGLE-BTN
+ //RIGHTBAR-TOGGLE-BTN
 document.getElementById('toggleRightBarButton').addEventListener("click", toggleVerticalBar);
 
-// //BOTTOMBAR-TOGGLE-BTN
+//TOPBAR-TOGGLE-BTN
+document.getElementById('toggleTopBarButton').addEventListener("click", toggleVerticalBar);
+
+//BOTTOMBAR-TOGGLE-BTN
 document.getElementById('toggleBottomBarButton').addEventListener("click", toggleVerticalBar);
+
 
 // TOPBAR
 document.getElementById('top-bar').addEventListener("wheel", scrollHorizontal);
