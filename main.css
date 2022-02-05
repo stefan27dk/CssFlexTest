@@ -198,15 +198,34 @@
 
 
 
+/*VERTICAL & HORIZONTAL - TOGGLE BUTTON - SHARED CODE*/
+.button-toggle-vertical-bar, .button-toggle-horizontal-bar {
+    padding:0;
+    margin:0;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(71, 71, 78);
+    color: rgb(175, 175, 175);
+    box-sizing: border-box;
+}
+
+/*VERTICAL & HORIZONTAL - TOGGLE BUTTON - SHARED ON HOVER*/
+.button-toggle-vertical-bar:hover, .button-toggle-horizontal-bar:hover
+{
+  color:rgb(255, 230, 0);
+  background-color: rgb(65, 65, 65);
+}
+
+
+
+
+
 /*TOGGLE - Vertical - Bars======================================================================================*/
 .button-toggle-vertical-bar
-{ 
-  /* position: relative; */
+{  
   min-width: 16px;
   max-width: 16px;
-  height: 100%;
-  padding: 0;
-  cursor: col-resize;
+  height: 100%; 
 }
  
 
@@ -216,12 +235,9 @@
 /*TOGGLE - Horizontal - Bars ======================================================================================*/
 .button-toggle-horizontal-bar
 { 
-  position: relative;
   width: 100%;
-  padding: 0;
   min-height: 16px;
   max-height: 16px;
-  cursor: row-resize;
 }
 
 
@@ -241,3 +257,64 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+
+
+.toggler
+{ 
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: -2px;
+}
+
+
+.border-right-p3
+{
+  border-right: 2px solid rgb(138, 138, 138);
+  padding-right: 3px;
+}
+
+.border-left
+{
+  border-left: 2px solid rgb(138, 138, 138);
+  
+}
+
+
+.border-bottom-p2
+{
+  border-bottom: 2px solid rgb(138, 138, 138);
+  padding-top: 2px;
+}
+
+
+.rotate-m-180deg
+{
+     writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+.border-top-p2
+{
+  border-top: 2px solid rgb(138, 138, 138);
+  padding-top: 2px;
+}
+
+
+.rotate-180deg
+{
+     writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+ 
