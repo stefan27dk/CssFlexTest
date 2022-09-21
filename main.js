@@ -2,7 +2,7 @@
 // FUNCTIONS ###################################################################
 
 // TOGGLE-VERTICAL-BARS ========================================================
-toggleVerticalBar = (e) =>
+function toggleBars(e)
 { 
     let current = e.currentTarget;
     let currentBar = document.getElementById(current.value);
@@ -18,9 +18,26 @@ toggleVerticalBar = (e) =>
         // current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
         // current.style.transform += "rotate(-180deg)";
     }
+
+    changeToggleBarIcon(current.value);
 }
 
  
+
+// Change Togglebar Icon =======================================================
+function changeToggleBarIcon(bar)
+{
+    let barToggler = document.getElementById(bar+"-toggler").children[0];
+    
+    if(barToggler.innerHTML== "‹‹")
+    {
+        barToggler.innerHTML="››";
+    }
+    else
+    {
+        barToggler.innerHTML="‹‹";
+    }
+}
 
 
 
@@ -38,16 +55,16 @@ scrollHorizontal = (e) =>
 
 // Event Listeners ##############################################################
 // LEFTBAR-TOGGLE-BTN
-document.getElementById('toggleLeftBarButton').addEventListener("click", toggleVerticalBar);
+document.getElementById('left-bar-toggler').addEventListener("click", toggleBars);
 
  //RIGHTBAR-TOGGLE-BTN
-document.getElementById('toggleRightBarButton').addEventListener("click", toggleVerticalBar);
+document.getElementById('right-bar-toggler').addEventListener("click", toggleBars);
 
 //TOPBAR-TOGGLE-BTN
-document.getElementById('toggleTopBarButton').addEventListener("click", toggleVerticalBar);
+document.getElementById('top-bar-toggler').addEventListener("click", toggleBars);
 
 //BOTTOMBAR-TOGGLE-BTN
-document.getElementById('toggleBottomBarButton').addEventListener("click", toggleVerticalBar);
+document.getElementById('bottom-bar-toggler').addEventListener("click", toggleBars);
 
 
 // TOPBAR
