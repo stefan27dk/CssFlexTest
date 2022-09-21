@@ -36,8 +36,7 @@ scrollHorizontal = (e) =>
 
 
 
-// Event Listeners ##############################################################
-// LEFTBAR-TOGGLE-BTN
+// Event Listeners ############################################################## 
 document.getElementById('toggleLeftBarButton').addEventListener("click", toggleVerticalBar);
 
  //RIGHTBAR-TOGGLE-BTN

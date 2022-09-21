@@ -316,6 +316,45 @@
 
 
 
+/*TOGGLE-BARS - TOGGLE-DEAFULT --------------------------------------*/
+.toggleBarsCheckboxDefault
+      {
+           -webkit-appearance: none;
+            appearance: none;
+            width: auto;
+            margin: 0;
+            
+            
+            font-weight: bold;
+            font-size: 23px;
+            letter-spacing: -2px;
+      }
 
+
+
+
+
+
+/*LEFT-BAR - TOGGLE --------------------------------------*/
+        .toggleLeftBarIco
+        { 
+            height: 100%;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .toggleLeftBarIco::before {
+            content: "»";
+            color: rgb(194, 194, 194);
+            text-shadow: 0 1px black;
+        }
+
+        .toggleLeftBarIco:checked {
+            /* padding-left: 8px; */
+        }
+
+        .toggleLeftBarIco:checked::before {
+            content: '⇥';
+        }
 
  
