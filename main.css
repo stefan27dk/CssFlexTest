@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
  } */
- 
+
 
  html, .main-body
  {
@@ -21,7 +21,7 @@
     left:0;
     right:0;
     box-sizing: border-box;
-    overflow: hidden; 
+    overflow: hidden;
  }
 
 
@@ -55,13 +55,11 @@
 
 #top-bar, #bottom-bar
 {
-    max-height: 70px;
-    min-height: 70px;
+    height: max-content;
     width: 100%;
     white-space : nowrap;
-    box-sizing: border-box;
-    overflow-x: auto;
-    overflow-y:hidden;
+    /* box-sizing: border-box; */
+    display: flex;
 }
 
 
@@ -127,22 +125,22 @@
        margin-right: auto;
  }
 
- 
+
 
 
  /*CONTENT-BAR ===================================================================================*/
 .content-bar
 {
     background-color: rgb(43, 255, 0);
-    box-sizing: border-box;
-    width: 100%; 
+    /* box-sizing: border-box; */
+    width: 100%;
     height:100%;
-    word-wrap: break-word; 
-    overflow: auto; 
+    word-wrap: break-word;
+    overflow: auto;
 }
 
- 
-  
+
+
 
 /*Centerize Container ==========================================================================*/
 .centerize-container
@@ -150,8 +148,11 @@
     background-color: blue;
     margin: auto;
     width:fit-content;
-    height: min-content;
-    box-sizing: border-box;
+    min-height: max-content;
+    /* box-sizing: border-box; */
+    padding:5px;
+   overflow-x: auto;
+
 }
 
 
@@ -162,15 +163,16 @@
 .horizontal-bar-content
 {
     background-color: red;
-    display: inline-table; 
+    display: inline-table;
     text-align: center;
     white-space: nowrap;
     margin: 2px 10px 2px 10px;
+    /* height: fit-content; */
 }
 
- 
 
-.horizontal-bar-content img 
+
+.horizontal-bar-content img
 {
     max-height: 30px;
 }
@@ -190,11 +192,11 @@
 }
 
 
-.vertical-bar-content img 
+.vertical-bar-content img
 {
     max-height: 30px;
 }
- 
+
 
 
 
@@ -222,19 +224,19 @@
 
 /*TOGGLE - Vertical - Bars======================================================================================*/
 .button-toggle-vertical-bar
-{  
+{
   min-width: 20px;
   max-width: 20px;
-  height: 100%; 
+  height: 100%;
 }
- 
+
 
 
 
 
 /*TOGGLE - Horizontal - Bars ======================================================================================*/
 .button-toggle-horizontal-bar
-{ 
+{
   width: 100%;
   min-height: 20px;
   max-height: 20px;
@@ -248,13 +250,12 @@
     box-sizing: border-box;
     width: 100%;
     height:100%;
-    word-wrap: break-word; 
-    overflow: auto; 
-    
+    /* word-wrap: break-word; */
+    /* overflow: auto; */
+
     display:flex;
     flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
     overflow: hidden;
 }
@@ -262,7 +263,7 @@
 
 
 .toggler
-{ 
+{
     font-weight: bold;
     font-size: 23px;
     letter-spacing: -2px;
@@ -278,7 +279,7 @@
 .border-left
 {
   border-left: 2px solid rgb(138, 138, 138);
-  
+
 }
 
 
@@ -321,13 +322,8 @@
 
 
 
-/*######################### Custom Scrollbar #########################################################*/
 
-       /* FIREFOX SCROLLBAR ------------------------------------------------------------------------- */
-    :root 
-    {
-        scrollbar-color: rgb(210, 210, 210) rgb(46, 54, 69) !important;
-    }
+
 
 
 
@@ -341,17 +337,17 @@
 
   /*------------------------Scrollbar - Track------------------------------------*/
   ::-webkit-scrollbar-track {
-    background: rgb(80, 80, 79); 
+    background: rgb(80, 80, 79);
   }
 
 
 
   /*------------------------Scrollbar - Thumb--------------------------------------*/
-  ::-webkit-scrollbar-thumb 
+  ::-webkit-scrollbar-thumb
   {
     background-color: rgb(177, 177, 177);
     border-radius: max(0.32vw, 0.7em);
-    border: solid rgb(82, 82, 82); 
+    border: solid rgb(82, 82, 82);
     min-height: 50px;
     min-width: 50px;
   }
@@ -467,4 +463,3 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(255, 181, 83)'><polygon points='0,0 0,100 50,50'/></svg>");
     background-color: rgb(58, 57, 65);
   }
-

@@ -68,10 +68,10 @@ document.getElementById('bottom-bar-toggler').addEventListener("click", toggleBa
 
 
 // TOPBAR
-document.getElementById('top-bar').addEventListener("wheel", scrollHorizontal);
+document.getElementById('top-bar-centerizer').addEventListener("wheel", scrollHorizontal);
 
 // BOTTOMBAR
-document.getElementById('bottom-bar').addEventListener("wheel", scrollHorizontal);
+document.getElementById('bottom-bar-centerizer').addEventListener("wheel", scrollHorizontal);
 
 
 
