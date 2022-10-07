@@ -93,8 +93,8 @@
 #left-bar, #right-bar
 {
     min-width: 100px;
-    width: max-content;
     max-width: 150px;
+    width: fit-content;
     height:100%;
     padding:12px;
 
@@ -293,7 +293,7 @@
 .rotate-m-180deg
 {
      writing-mode: vertical-lr;
-    transform: rotate(-180deg);
+     transform: rotate(-180deg);
 }
 
 
