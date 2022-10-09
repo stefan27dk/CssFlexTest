@@ -8,7 +8,7 @@ function toggleBars(e)
     let currentBar = document.getElementById(current.value); // The toggler buttons have assigned value for the specific bar they need to toggle ex. toggler value for topbar is value="top-bar", the toggler id is id="top-bar-toggler" than later evt. you can use the value "top-bar"+"toggler" to get the toggler, but in this case we just pass it to the next funktion to use it insteat of doing getElement
     if(currentBar.style.display === 'none')
     {
-        currentBar.style.display = 'flex';
+        currentBar.style.display = 'block';
         // current.style.transform += "rotate(360deg)";
         // current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
     }
@@ -70,10 +70,10 @@ document.getElementById('bottom-bar-toggler').addEventListener("click", toggleBa
 
 
 // TOPBAR
-document.getElementById('top-bar-centerizer').addEventListener("wheel", scrollHorizontal);
+document.getElementById('top-bar-wrapper').addEventListener("wheel", scrollHorizontal);
 
 // BOTTOMBAR
-document.getElementById('bottom-bar-centerizer').addEventListener("wheel", scrollHorizontal);
+document.getElementById('bottom-bar-wrapper').addEventListener("wheel", scrollHorizontal);
 
 
 

@@ -59,7 +59,6 @@
     width: 100%;
     white-space : nowrap;
     /* box-sizing: border-box; */
-    display: flex;
 }
 
 
@@ -143,19 +142,23 @@
 
 
 /*Centerize Container ==========================================================================*/
-.centerize-container
+.horizontal-wrapper-container
 {
     background-color: blue;
-    margin: auto;
-    width:fit-content;
+    /* margin: auto; */
+    /* width:auto; */
     min-height: max-content;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding:5px;
-   overflow-x: auto;
-
+    overflow-x: auto;
+    display: flex;
+    /* width: 100%; */
 }
 
-
+.margin-auto
+{
+  margin:auto;
+}
 
 
 
