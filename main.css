@@ -10,6 +10,7 @@
  :root
  {
    --panelsBackground: rgb(62, 64, 68);
+   scrollbar-color: rgb(210, 210, 210) rgb(46, 54, 69) !important;
  }
 
  html, .main-body
@@ -271,6 +272,8 @@
 
 
 
+/* COMMON CSS ======================================================================================*/
+
 .toggler
 {
     font-weight: bold;
@@ -309,8 +312,6 @@
 
 
 
-
-
 .border-top-p2
 {
   border-top: 2px solid rgb(138, 138, 138);
@@ -330,6 +331,70 @@
 {
   margin:auto;
 }
+
+
+
+
+/* LINKS CSS - STYLES - for Content bar ======================================================================================*/
+
+/* Default link color */
+.content-bar a:link
+{
+ color:red;
+}
+
+
+/* Visitet links */
+.content-bar a:visited
+{
+ color:lime;
+}
+
+
+/* On mouse over link */
+.content-bar a:hover
+{
+color: rgb(0, 183, 255);
+}
+
+
+/* On Link Press */
+.content-bar a:active
+{
+  color:blue;
+}
+
+
+
+
+
+
+
+
+
+/* LINKS CSS - STYLES - for default bars (Left, Right, Top, Bottom panels / bars) ======================================================================================*/
+/* Default link color */
+#top-bar a, #bottom-bar a, #left-bar a, #right-bar a
+{
+ color:rgb(255, 179, 93);
+}
+
+
+
+/* On mouse over link */
+#top-bar a:hover, #bottom-bar a:hover, #left-bar a:hover, #right-bar a:hover
+{
+ color: rgb(0, 183, 255); 
+ filter: drop-shadow(5px 2px 10px rgb(1,1,1));
+}
+
+
+/* On Link Press */
+#top-bar a:active, #bottom-bar a:active, #left-bar a:active, #right-bar a:active
+{
+  color:blue;
+}
+
 
 
 
