@@ -7,6 +7,10 @@
 
  } */
 
+ :root
+ {
+   --panelsBackground: rgb(62, 64, 68);
+ }
 
  html, .main-body
  {
@@ -29,14 +33,14 @@
  /* HTML =====================================================================================*/
  html
  {
-     background-color: sandybrown;
+     /* background-color: sandybrown; */
  }
 
 
   /* MAIN BODY ============================================================================== */
  .main-body
  {
-     background-color: blue;
+     /* background-color: blue; */
      /* overflow: hidden; */
  }
 
@@ -46,7 +50,7 @@
 {
     display: flex;
     height: 100vh;
-    background-color: aquamarine;
+    /* background-color: var(--panelsBackground); */
     flex-direction:column;
     box-sizing: border-box;
 }
@@ -65,14 +69,14 @@
  /*TOP-BAR ===================================================================================*/
 #top-bar
 {
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 
  /*BOTTOM-BAR ===================================================================================*/
  #bottom-bar
  {
-     background-color: chartreuse;
+     /* background-color: chartreuse; */
  }
 
 
@@ -104,13 +108,15 @@
 
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: var(--panelsBackground);
+     
 }
 
 
  /*LEFT-BAR ===================================================================================*/
 #left-bar
 {
-      background-color: rgb(3, 133, 3);
+      /* background-color: rgb(3, 133, 3); */
 }
 
 
@@ -120,7 +126,7 @@
  #right-bar
  {
      /* position: relative; */
-       background-color: darkmagenta;
+       /* background-color: darkmagenta; */
        margin-right: auto;
  }
 
@@ -130,7 +136,7 @@
  /*CONTENT-BAR ===================================================================================*/
 .content-bar
 {
-    background-color: rgb(43, 255, 0);
+    /* background-color: rgb(43, 255, 0); */
     /* box-sizing: border-box; */
     width: 100%;
     height:100%;
@@ -144,7 +150,7 @@
 /*Centerize Container ==========================================================================*/
 .horizontal-wrapper-container
 {
-    background-color: blue;
+  background-color: var(--panelsBackground);
     /* margin: auto; */
     /* width:auto; */
     min-height: max-content;
@@ -155,17 +161,16 @@
     /* width: 100%; */
 }
 
-.margin-auto
-{
-  margin:auto;
-}
+
 
 
 
 /*HORIZONTAL BARS - CONTENT - ############################################################################*/
 .horizontal-bar-content
 {
-    background-color: red;
+  
+    /* background-color: red; */
+     /* color:lime; */
     display: inline-table;
     text-align: center;
     white-space: nowrap;
@@ -186,11 +191,12 @@
 /*VERTICAL BARS - CONTENT - ############################################################################*/
 .vertical-bar-content
 {
-    background-color: rgb(255, 255, 199);
+    /* background-color: rgb(255, 255, 199); */
     width:fit-content;
     display: block;
     margin: 35px auto 35px auto;
     text-align: center;
+    /* color:lime; */
     /* white-space : nowrap; */
 }
 
@@ -249,7 +255,7 @@
 
 .center-wrapper
 {
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     box-sizing: border-box;
     width: 100%;
     height:100%;
@@ -320,7 +326,10 @@
 
 
 
-
+.margin-auto
+{
+  margin:auto;
+}
 
 
 
