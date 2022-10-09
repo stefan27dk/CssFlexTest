@@ -5,10 +5,10 @@
 function toggleBars(e)
 { 
     let current = e.currentTarget;
-    let currentBar = document.getElementById(current.value);
+    let currentBar = document.getElementById(current.value); // The toggler buttons have assigned value for the specific bar they need to toggle ex. toggler value for topbar is value="top-bar", the toggler id is id="top-bar-toggler" than later evt. you can use the value "top-bar"+"toggler" to get the toggler, but in this case we just pass it to the next funktion to use it insteat of doing getElement
     if(currentBar.style.display === 'none')
     {
-        currentBar.style.display = 'block';
+        currentBar.style.display = 'flex';
         // current.style.transform += "rotate(360deg)";
         // current.style.transform = "translateY(-50%)"; // Keep at the center after show bar
     }
@@ -19,23 +19,25 @@ function toggleBars(e)
         // current.style.transform += "rotate(-180deg)";
     }
 
-    changeToggleBarIcon(current.value);
+    // changeToggleBarIcon(current.value);
+    changeToggleBarIcon(current);
 }
 
  
 
 // Change Togglebar Icon =======================================================
-function changeToggleBarIcon(bar)
+function changeToggleBarIcon(toggler)
 {
-    let barToggler = document.getElementById(bar+"-toggler").children[0];
+    // let barToggler = document.getElementById(bar+"-toggler").children[0]; // Get the toggler 
+    let barTogglerText = toggler.children[0]; // Get the toggler text, which is the first child the arrow text ">>" 
     
-    if(barToggler.innerHTML== "‹‹")
+    if(barTogglerText.innerHTML== "‹‹")
     {
-        barToggler.innerHTML="››";
+        barTogglerText.innerHTML="››";
     }
     else
     {
-        barToggler.innerHTML="‹‹";
+        barTogglerText.innerHTML="‹‹";
     }
 }
 
