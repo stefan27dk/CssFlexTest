@@ -70,10 +70,10 @@ document.getElementById('bottom-bar-toggler').addEventListener("click", toggleBa
 
 
 // TOPBAR
-document.getElementById('top-bar-wrapper').addEventListener("wheel", scrollHorizontal);
+document.getElementById('top-bar-wrapper').addEventListener("wheel", scrollHorizontal, {passive: true});
 
 // BOTTOMBAR
-document.getElementById('bottom-bar-wrapper').addEventListener("wheel", scrollHorizontal);
+document.getElementById('bottom-bar-wrapper').addEventListener("wheel", scrollHorizontal, {passive: true});
 
 
 

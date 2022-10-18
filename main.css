@@ -67,11 +67,23 @@
 }
 
 
+
  /*TOP-BAR ===================================================================================*/
 #top-bar
 {
     /* background-color: burlywood; */
 }
+
+
+#top-bar-toggler
+{
+  border-bottom: 2px solid rgb(138, 138, 138);
+  padding-top: 2px;
+}
+
+
+
+
 
 
  /*BOTTOM-BAR ===================================================================================*/
@@ -81,6 +93,11 @@
  }
 
 
+ #bottom-bar-toggler
+ {
+  border-top: 2px solid rgb(138, 138, 138);
+  padding-top: 2px;
+ }
 
 
 .main-bars-holder
@@ -100,26 +117,40 @@
     max-width: 150px;
     width: fit-content;
     height:100%;
-    padding:12px;
-
+    padding:5px 10px 10px 5px;
+ 
+    
     text-align: center;
-    word-wrap: break-word;
+    
+    /* word-wrap: break-word; */
     word-break: break-word;
     box-sizing: border-box;
+
+    font-size: 12px;
+
 
     overflow-y: auto;
     overflow-x: hidden;
     background-color: var(--panelsBackground);
-     
+    /* border-left: 2px solid rgb(53, 51, 51);
+    border-right: 2px solid  rgb(53, 51, 51); */
+
+    border-left: 3px solid rgb(53, 51, 51);
+    border-right: 2px solid  rgb(43, 42, 42);
 }
 
 
  /*LEFT-BAR ===================================================================================*/
 #left-bar
 {
-      /* background-color: rgb(3, 133, 3); */
+      /* background-color: rgb(3, 133, 3); */ 
 }
 
+ #left-bar-toggler
+ {
+   border-right: 2px solid rgb(138, 138, 138);
+   padding-right: 3px;
+ }
 
 
 
@@ -129,6 +160,13 @@
      /* position: relative; */
        /* background-color: darkmagenta; */
        margin-right: auto;
+ }
+
+
+ 
+ #right-bar-toggler
+ {
+   border-left: 2px solid rgb(138, 138, 138);
  }
 
 
@@ -169,8 +207,7 @@
 /*HORIZONTAL BARS - CONTENT - ############################################################################*/
 .horizontal-bar-content
 {
-  
-    /* background-color: red; */
+      /* background-color: red; */
      /* color:lime; */
     display: inline-table;
     text-align: center;
@@ -181,9 +218,9 @@
 
 
 
-.horizontal-bar-content img
+.horizontal-bar-content img, .vertical-bar-content img
 {
-    max-height: 30px;
+    max-height: 30px; 
 }
 
 
@@ -202,10 +239,7 @@
 }
 
 
-.vertical-bar-content img
-{
-    max-height: 30px;
-}
+ 
 
 
 
@@ -232,6 +266,10 @@
 
 
 
+
+
+
+
 /*TOGGLE - Vertical - Bars======================================================================================*/
 .button-toggle-vertical-bar
 {
@@ -239,6 +277,12 @@
   max-width: 20px;
   height: 100%;
 }
+
+
+
+
+
+
 
 
 
@@ -272,6 +316,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /* COMMON CSS ======================================================================================*/
 
 .toggler
@@ -282,24 +335,7 @@
 }
 
 
-.border-right-p3
-{
-  border-right: 2px solid rgb(138, 138, 138);
-  padding-right: 3px;
-}
-
-.border-left
-{
-  border-left: 2px solid rgb(138, 138, 138);
-
-}
-
-
-.border-bottom-p2
-{
-  border-bottom: 2px solid rgb(138, 138, 138);
-  padding-top: 2px;
-}
+ 
 
 
 .rotate-m-180deg
@@ -311,12 +347,7 @@
 
 
 
-
-.border-top-p2
-{
-  border-top: 2px solid rgb(138, 138, 138);
-  padding-top: 2px;
-}
+ 
 
 
 .rotate-180deg
@@ -331,6 +362,12 @@
 {
   margin:auto;
 }
+
+
+
+
+
+
 
 
 
@@ -415,6 +452,7 @@ color: rgb(0, 183, 255);
   /*------------------------Scrollbar - Track------------------------------------*/
   ::-webkit-scrollbar-track {
     background: rgb(80, 80, 79);
+    /* border-radius: max(0.32vw, 0.7em); */
   }
 
 
