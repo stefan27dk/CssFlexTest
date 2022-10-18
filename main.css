@@ -113,7 +113,7 @@
 
 #left-bar, #right-bar
 {
-    min-width: 100px;
+    min-width: 115px;
     max-width: 150px;
     width: fit-content;
     height:100%;
@@ -126,7 +126,7 @@
     word-break: break-word;
     box-sizing: border-box;
 
-    font-size: 12px;
+    /* font-size: 12px; */
 
 
     overflow-y: auto;
@@ -414,6 +414,11 @@ color: rgb(0, 183, 255);
 #top-bar a, #bottom-bar a, #left-bar a, #right-bar a
 {
  color:rgb(255, 179, 93);
+ text-decoration: none;
+ font-size: clamp(12px, 1.5vw, 14px);
+ font-family: Vrinda;
+ font-weight: bold;
+ 
 }
 
 
